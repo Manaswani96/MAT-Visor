@@ -1,62 +1,42 @@
 % wavepacket_viz.m
-% Simulate a Gaussian wavepacket in 1D free space
-% and visualize its time evolution using MATLAB
+% Gaussian wavepacket animation — updated for better visualization
 
 clear; clc;
 
-% Physical parameters
-hbar = 1;          % Reduced Planck's constant (normalized)
-m = 1;             % Particle mass
+% Spatial and time grids
+x = linspace(-50, 50, 1000);    % x-axis
+t = linspace(0, 2, 100);        % time steps
 
-% Spatial domain
-x = linspace(-10, 10, 1000);
-dx = x(2) - x(1);
+% Parameters of the wavepacket
+x0 = -20;        % initial center position
+sigma = 2;       % initial spread
+k0 = 5;          % wave number (controls frequency / movement speed)
+hbar = 1;        % Planck's constant
+m = 1;           % particle mass
 
-% Initial wavepacket parameters
-x0 = -5;           % Initial position
-k0 = 5;            % Initial momentum
-sigma = 1;         % Width of the packet
+[X, T] = meshgrid(x, t);
+Psi = zeros(length(t), length(x));
 
-% Initial wavefunction (Gaussian)
-psi0 = (1/(pi*sigma^2))^(1/4) * exp(1i*k0*x) .* exp(-(x - x0).^2 / (2*sigma^2));
-
-% Normalize wavefunction
-psi0 = psi0 / sqrt(trapz(x, abs(psi0).^2));
-
-% Time evolution settings
-t_max = 2;
-dt = 0.01;
-t_steps = round(t_max/dt);
-
-% K-space domain
-k = linspace(-50, 50, 1000);
-dk = k(2) - k(1);
-
-% Precompute FFT of initial wavefunction
-phi_k = fftshift(fft(psi0));
-phi_k = phi_k / sqrt(trapz(k, abs(phi_k).^2));
-
-% Time evolution in momentum space
-figure('Color','w');
-for t = 0:dt:t_max
-    % Apply phase factor in momentum space
-    phi_t = phi_k .* exp(-1i * (hbar * k.^2 / (2 * m)) * t);
-    
-    % Inverse FFT to get psi(x, t)
-    psi_t = ifft(ifftshift(phi_t));
-
-    % Plot probability density
-    plot(x, abs(psi_t).^2, 'LineWidth', 2);
-    xlim([-10, 10]);
-    ylim([0, 0.5]);
-    xlabel('x'); ylabel('|ψ(x, t)|²');
-    title(sprintf('Gaussian Wavepacket Evolution at t = %.2f', t));
-    grid on;
-    drawnow;
+% Precompute wavepacket over time
+for i = 1:length(t)
+    ti = t(i);
+    spreading = sigma^2 + 1i * hbar * ti / m;
+    normalization = 1 / sqrt(sqrt(pi) * sqrt(spreading));
+    Psi_t = normalization * exp( -((x - x0 - (hbar * k0 / m) * ti).^2) ./ (2 * spreading) ) ...
+            .* exp(1i * (k0 * (x - x0 - (hbar * k0 / m) * ti)) );
+    Psi(i, :) = Psi_t;
 end
 
-% After your existing plotting loop in wavepacket_viz.m
-
-nFrames = length(t);
-create_gif('outputs/wavepacket_evolution.gif', nFrames, 0.05);
+% Animation
+figure;
+for i = 1:length(t)
+    y = abs(Psi(i, :)).^2;  % Probability density
+    plot(x, y, 'b', 'LineWidth', 2);
+    title(sprintf('Gaussian Wavepacket at t = %.2f', t(i)));
+    xlabel('Position');
+    ylabel('Probability Density');
+    ylim([0, 0.5]);
+    grid on;
+    pause(0.05);
+end
 
