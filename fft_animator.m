@@ -1,16 +1,20 @@
 % fft_animator.m
 % Animated FFT visualization of a time-varying signal
 
-clear; close all; clc;
+clear; 
+close all; 
+clc;
 
 % --- Settings ---
-fs = 1000;              % Sampling frequency (Hz)
+fs = 1000;              % (Hz)
 t = 0:1/fs:2;           % Time vector (2 seconds)
 signal = sin(2*pi*10*t) + 0.5*sin(2*pi*25*t);  % Example: Sum of 10Hz and 25Hz
 
-% Create figure
+
 figure('Color', 'w');
-title('Live FFT Spectrum'); xlabel('Frequency (Hz)'); ylabel('Magnitude');
+title('Live FFT Spectrum');
+xlabel('Frequency (Hz)');
+ylabel('Magnitude');
 grid on;
 xlim([0 100]); ylim([0 1]);
 hold on;
@@ -18,7 +22,7 @@ hold on;
 frameRate = 30;
 frameStep = round(length(t)/frameRate);
 
-% Animate FFT
+% FFT
 for i = 1:frameStep:length(t)
     segment = signal(1:i);
     L = length(segment);
