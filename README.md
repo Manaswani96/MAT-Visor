@@ -21,10 +21,8 @@ This repository showcases elegant visual simulations of key quantum mechanical p
 -  Demonstrates partial reflection and transmission.
 -  Classic quantum effect that defies classical intuition.
 
-## 🧠 Uses
-
-- **quantum mechanics** 
-- Visual content for research blogs, presentations, and outreach
+###
+**quantum mechanics** 
 - Concept reinforcement for **wavefunction dynamics**, **uncertainty**, and **signal processing**
 
 ---
