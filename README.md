@@ -1,85 +1,60 @@
-# 🧠 Mat-Visor: Quantum & Signal Visualization Toolkit
+# Quantum Wavepacket Visualizations 🔭
 
-**Mat-Visor** is a MATLAB-powered visualizer for beautiful, math-rich simulations in quantum mechanics and signal processing. From evolving wavefunctions to frequency animations, this project transforms equations into art.
-
-> "For those who see code in color, and physics in poetry."
+This repository showcases elegant visual simulations of key quantum mechanical phenomena using **MATLAB**. Each animation captures the mathematical beauty and dynamics of wavepackets — a core concept in quantum physics — making this an ideal resource for learners, researchers, and visual thinkers.
 
 ---
 
-## 🌌 Features
+## 📁 Contents
 
-- 📈 **Gaussian Wavepacket Simulator**  
-  Visualizes the free evolution of a quantum particle in 1D space using wavefunction propagation.
+### 1. `fft_animator.m`  
+**Purpose**: Visualizes how a signal transforms between time and frequency domains using **Fast Fourier Transform (FFT)**.  
+- 💡 Shows frequency content change dynamically.
+- 🔍 Useful in quantum signal processing and filtering concepts.
 
-- 🎵 **(Coming Soon) FFT Animator**  
-  Converts real signals into animated frequency domain plots, showing spectral changes over time.
+### 2. `wavepacket_2d_animator.m`  
+**Purpose**: Simulates a **2D Gaussian wavepacket** moving in space.  
+- 📈 Demonstrates spatial spreading and motion of a quantum particle.
+- 🎨 Visually rich and interactive surface plots.
 
-- 🔥 Aesthetic, Annotated, and Educational  
-  Every script is built with simplicity and visuals in mind — ideal for learning or sharing.
-
----
-
-## 📂 Project Structure
-
-Mat-Visor/
-│
-├── wavepacket_viz.m # Gaussian wavepacket evolution (Quantum Mechanics)
-├── outputs/ # Saved plots and GIFs (if any)
-├── README.md # You're reading this
-└── [coming soon]
-├── fft_animator.m # Signal to Frequency Animation
-└── create_gif.m # Export MATLAB plots as animated GIFs
-
+### 3. `tunneling_animator.m`  
+**Purpose**: Animates **quantum tunneling**, where a particle-like wavepacket interacts with a potential barrier.  
+- 🚀 Demonstrates partial reflection and transmission.
+- ⚛️ Classic quantum effect that defies classical intuition.
 
 ---
 
-## 🌠 Example Output
+## 🎥 Output
 
-**Gaussian Wavepacket:**
-
-![wavepacket_gif](./outputs/wavepacket_example.gif)  
-*Real-time evolution of a quantum particle with a localized Gaussian wavefunction.*
-
-> Don't just study the wave — *see it move.*
+All simulations generate animated `.gif` files stored in the `output/` folder after execution.  
+No external tool needed — just MATLAB.
 
 ---
 
-## 🧠 Who Is This For?
+## 🧠 Uses
 
-- Physics and EE undergrads learning wave mechanics or signal analysis
-- Students working on MATLAB + quantum assignments
-- Curious coders who love turning math into art
-
----
-
-## 📚 Concepts Covered
-
-- Quantum wavefunctions & uncertainty
-- Fourier transforms (in progress)
-- Time-evolution of complex fields
-- MATLAB plotting & animation
+- Educational demos for **quantum mechanics** courses
+- Visual content for research blogs, presentations, and outreach
+- Concept reinforcement for **wavefunction dynamics**, **uncertainty**, and **signal processing**
 
 ---
 
-## ✨ Coming Next
+## 🚀 How to Run
 
-- [ ] `fft_animator.m`: Animate signal → frequency evolution  
-- [ ] `create_gif.m`: Convert plots to beautiful `.gif`  
-- [ ] `matrix_heatmap.m`: Visualize linear algebra operations  
+1. Clone the repository:
 
----
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+```
+2. Open MATLAB, navigate to the repo folder, and run any file
+   % For example
+fft_animator
 
-## 📜 License
+💎 Requirements
+MATLAB (R2021+ recommended)
 
-MIT License. Use freely, credit gracefully.
+No external libraries or toolboxes required
 
----
-
-## 🐣 Author
-
-> **Manaswani** – quantum girl in a classical world  
-> [@yourTwitterHandle] • GitHub: [yourusername]  
-> *“Math is my love language.”*
-
----
-
+✨ Author
+Made with MATLAB, math, and midnight chaos by Mahi.
+📜 License
+MIT License — feel free to use or remix this with credit!
