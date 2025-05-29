@@ -32,7 +32,7 @@ No external tool needed — just MATLAB.
 
 ## 🧠 Uses
 
-- Educational demos for **quantum mechanics** courses
+- **quantum mechanics** 
 - Visual content for research blogs, presentations, and outreach
 - Concept reinforcement for **wavefunction dynamics**, **uncertainty**, and **signal processing**
 
