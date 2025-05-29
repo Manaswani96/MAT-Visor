@@ -40,12 +40,12 @@ git clone https://github.com/your-username/your-repo-name.git
    % For example
 fft_animator
 
-💎 Requirements
+Requirements
 MATLAB (R2021+ recommended)
 <br>
 No external libraries or toolboxes required
 
-✨ Author<br>
+Author<br>
 Made with MATLAB, math by Mahi. <br>
 📜 License <br>
 MIT License — feel free to use or remix this with credit! <br>
