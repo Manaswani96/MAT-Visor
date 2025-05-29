@@ -21,6 +21,9 @@ This repo features elegant MATLAB animations of key quantum phenomena, visualizi
 -  Demonstrates partial reflection and transmission.
 -  Classic quantum effect that defies classical intuition.
 
+### 4. `group_vs_phase_animator`  
+Visualizes the difference between group velocity and phase velocity in wave propagation, helping to understand key wave mechanics concepts.
+
 ###
 **quantum mechanics** 
 - Concept reinforcement for **wavefunction dynamics**, **uncertainty**, and **signal processing**
