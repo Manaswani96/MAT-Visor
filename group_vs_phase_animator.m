@@ -1,16 +1,15 @@
 % group_vs_phase_animator.m
 % Visualize group vs phase velocity using MATLAB
-
-clear; clc; close all;
-
-% Parameters
+clear; 
+clc; 
+close all;
 k0 = 10;            % Central wavenumber
 dk = 2;             % Spread in wavenumber
 v_phase = 2;        % Phase velocity
 v_group = 0.5;      % Group velocity
 x = linspace(-50, 50, 1000);
 tMax = 30;          % Duration of animation
-dt = 0.2;           % Time step
+dt = 0.2;           
 frames = [];
 
 figure('Color','w');
@@ -32,7 +31,7 @@ for t = 0:dt:tMax
     axis([-50 50 -1 1]); grid on;
     drawnow;
 
-    % Save to GIF
+    
     if gifOn
         frame = getframe(gcf);
         img = frame2im(frame);
