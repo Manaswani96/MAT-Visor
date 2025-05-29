@@ -37,7 +37,7 @@ This repository showcases elegant visual simulations of key quantum mechanical p
 git clone https://github.com/your-username/your-repo-name.git
 ```
 2. Open MATLAB, navigate to the repo folder, and run any file
-   % For example
+   <br> For example
 fft_animator
 
 Requirements
