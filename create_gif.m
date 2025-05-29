@@ -1,4 +1,3 @@
-% create_gif.m
 % Capture current MATLAB figure as animated GIF
 
 function create_gif(filename, nFrames, delay)
