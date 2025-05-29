@@ -1,6 +1,6 @@
 # Quantum Wavepacket Visualizations 🔭
 
-This repository showcases elegant visual simulations of key quantum mechanical phenomena using **MATLAB**. Each animation captures the mathematical beauty and dynamics of wavepackets, a core concept in quantum physics, making this an ideal resource for learners, researchers, and visual thinkers.
+This repo features elegant MATLAB animations of key quantum phenomena, visualizing wavepacket dynamics to aid learners, researchers, and visual thinkers!!
 
 ---
 
