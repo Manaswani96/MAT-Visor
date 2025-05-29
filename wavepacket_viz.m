@@ -54,3 +54,9 @@ for t = 0:dt:t_max
     grid on;
     drawnow;
 end
+
+% After your existing plotting loop in wavepacket_viz.m
+
+nFrames = length(t);
+create_gif('outputs/wavepacket_evolution.gif', nFrames, 0.05);
+
