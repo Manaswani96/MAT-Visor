@@ -51,10 +51,10 @@ fft_animator
 
 💎 Requirements
 MATLAB (R2021+ recommended)
-
+<br>
 No external libraries or toolboxes required
 
-✨ Author
-Made with MATLAB, math, and midnight chaos by Mahi.
-📜 License
-MIT License — feel free to use or remix this with credit!
+✨ Author<br>
+Made with MATLAB, math by Mahi. <br>
+📜 License <br>
+MIT License — feel free to use or remix this with credit! <br>
