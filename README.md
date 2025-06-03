@@ -21,33 +21,61 @@ This repo features elegant MATLAB animations of key quantum phenomena, visualizi
 -  Demonstrates partial reflection and transmission.
 -  Classic quantum effect that defies classical intuition.
 
-### 4. `group_vs_phase_animator`  
-Visualizes the difference between group velocity and phase velocity in wave propagation, helping to understand key wave mechanics concepts.
 
-###
-**quantum mechanics** 
-- Concept reinforcement for **wavefunction dynamics**, **uncertainty**, and **signal processing**
+## 🧠 Quantum Mechanics Concepts Illustrated
 
----
+-   **Wavefunction Dynamics**: Observe how quantum states evolve over time.
+    
+-   **Uncertainty Principle**: Visual demonstrations of position-momentum uncertainty.
+    
+-   **Signal Processing**: Explore the quantum analogs of classical signal transformations.
+    
+
+----------
 
 ## 🚀 How to Run
 
-1. Clone the repository:
+1.  **Clone the repository**:
+    
+    ```bash
+    git clone https://github.com/Manaswani96/MAT-Visor.git
+    
+    ```
+    
 
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-```
-2. Open MATLAB, navigate to the repo folder, and run any file
-   <br> For example
-fft_animator
-<br> Click run, and get the plot as your output!
+2.  **Open MATLAB**, navigate to the cloned repository folder.
+    
+3.  **Run any of the animation scripts**:
+    
+    ```matlab
+    fft_animator
+    
+    ```
+    
 
-Requirements
-MATLAB (R2021+ recommended)
-<br>
-No external libraries or toolboxes required
+Click the "Run" button in MATLAB, and the corresponding plot will be displayed.
 
-Author<br>
-Made with MATLAB, math by Mahi. <br>
-📜 License <br>
-MIT License — feel free to use or remix this with credit! <br>
+----------
+
+## ✅ Requirements
+
+-   **MATLAB**: Version R2021 or newer is recommended.
+    
+-   **Dependencies**: No external libraries or toolboxes are required.
+    
+
+----------
+
+## 👤 Author
+
+Developed by [Mahi. K](https://github.com/Manaswani96) using MATLAB to visualize fundamental quantum mechanics concepts.
+
+----------
+
+## 📜 License
+
+This project is licensed under the **MIT License**. Feel free to use or modify the code with appropriate credit.
+
+----------
+
+For more information and to explore the repository, visit: [MAT-Visor on GitHub](https://github.com/Manaswani96/MAT-Visor/)
